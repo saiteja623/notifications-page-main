@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width:100%;
+    min-height: 100vh;
+    background-color: hsl(210, 60%, 98%);
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width:509px;
+    background-color: white;
+    padding:20px;
+
+}
+header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0px;
+}
+header button{
+    background:none;
+    outline: none;
+    border:none;
+    font-family: inherit;
+    font-size:0.7em;
+    cursor:pointer;
+}
+.heading #notifiNum{
+    background:blue;
+    padding:2px 4px;
+    border-radius: 4px;
+    color:white;
+    font-size: 0.7em;
+    margin-left:6px;
+}
+.content{
+    width:100%;
+    padding:10px;
+}
+.notification-box{
+    font-size:0.9em;
+    color:hsl(219, 12%, 42%);
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    padding:7px 10px;
+    /* background-color: red; */
+    margin:5px 0px;
+}
+.content .unread{
+    background-color: hsl(210, 60%, 98%);
+}
+.notification-box .profile img{
+    width:30px;
+}
+.notification-box .picture img{
+    width:30px
+}
+.message-content{
+    flex-grow: 1;   
+    padding-left: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;;
+}
+.message-content  p{
+    font-size:0.7em;
+}
+.message-content .dm{
+    margin:10px 0px;
+    padding:8px 15px;
+    /* font-size:0.8rem; */
+    border:solid 1px rgba(0,0,0,.3);
+    border-radius:5px;
+}
+.message-content .dm p{
+    line-height: 15px;
+}
+.message  p .name{
+    font-weight: 800;
+    margin-right: 4px;
+    color:black;
+}
+.message p .highlight{
+    color:hsl(219, 12%, 42%);
+    font-family: inherit;
+    font-weight: 800;
+}
+.message-content .time{
+    color:hsl(219, 14%, 63%);
+    margin-top:4px;
+}
+.dot{
+    display: inline-block;
+    margin-left: 4px;
+    width: 5px;
+    height:5px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+}
+@media screen and (max-width:400px)
+{
+    body{
+        font-size: 14px;
+    }
+    .container{
+        padding:10px 5px;
+        max-width: 95%;
+    }
+    .container .content{
+        padding :0px 5px;
+    }
+}
